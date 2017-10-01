@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 750px;
+  height: 400px;
+  margin: 20px auto 0;
+  color: #3f51b5;
+
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 2em;
+}
+
+.item {
+  border: 1px solid #8bc34a;
+  border-radius: 5px;
+  padding: 5px;
+  background: #c5e1a5;
+}
+
+.item:first-child {
+  background:  #ffe082;
+  grid-row: 2 / 3;
+  grid-column: 3 / 5;
+}
+
+.item:last-child {
+  background: #ffe082;
+  grid-row: 3 / 4;
+  grid-column: 1 / 5;
+}
